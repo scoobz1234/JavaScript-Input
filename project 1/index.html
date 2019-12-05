@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    
+<!-- Header of the page goes here... -->
+    
+<head>
+<meta charset="UTF-8">
+<title>Stephen R Ouellette: Lab #1</title>
+</head>
+    
+<!-- this is your JavaScript homework assignment -->
+    
+<script>
+    
+    // Lets get the users name...
+    var myName = prompt("Please Type in your name?");
+    if (myName == null || myName == ""){
+        myName = "Somone who can't follow directions...";
+    }
+    
+    // cool thing you've done...
+    var coolThing = prompt("What's somthing cool you've done?");
+    if (coolThing == null || coolThing == ""){
+        coolThing = "Someone is a boring person...";
+    }
+        
+</script>
+    <!-- This is the function that will be called later to create lines... -->
+<style>
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+} 
+</style>    
+    <!-- Body of the Page goes here.... -->
+
+<body>
+    <!-- <h1> gives you the largest header.... -->
+    <h1>
+        <script>
+        document.write("Hello " + myName + "!");
+        console.log(myName);
+        </script>
+    </h1>
+    <hr>
+    <h4>
+        Something cool you have done:
+    </h4>
+    <!-- <p> starts a paragraph.... -->
+    <!-- here a script bit to write coolThing to the page.... -->
+    <p>
+        <script>
+            document.write(coolThing);
+        </script>
+    </p>
+    <hr>
+    <p>
+        <!-- Unordered list which utilizes bullet points... -->
+    <h4>My Hobbies:</h4>
+    <ul>
+        <li>Snowboarding</li>
+        <li><b>Playing Video Games</b></li>
+        <li><em>Programming Educational Games</em></li>
+    </ul>
+    <hr>
+    <br>
+    <hr>
+    <!-- Ordered List utilizes numbering... -->
+    <h4>My Bucket List:</h4>
+    <ol>
+        <li>Tour Europe</li>
+        <li>Program <u>AAA</u> game</li>
+        <li>Survive life</li>
+    </ol>
+    </p>
+    
+</body>
+</html>
